@@ -1,0 +1,643 @@
+header {
+  width: 100%;
+  height: 105px;
+  background: url("../../src/assets/topbar.png");
+  background-repeat: repeat;
+  background-size: 240px 622px;
+  background-position: 0px -80px;
+}
+
+.header-1 {
+  width: 1150px;
+  height: 70px;
+  /*border: 1px solid #000;*/
+  margin: 0 auto;
+}
+
+/*footer{
+  width:100%;
+  position:absolute;
+  top:1100px;;
+}*/
+.header-1::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: url("../../src/assets/navshadow.png")
+}
+
+.logo {
+  display: block;
+  overflow: hidden;
+  width: 162px;
+  height: 44px;
+  /*border: 1px solid #000;*/
+  background: url("../../src/assets/topbar.png");
+  /*position: absolute;*/
+  margin-top: 15px;
+  margin-left: 18px;
+  float: left;
+}
+
+.ul-top li {
+  /*border:1px solid black;*/
+  /*width: 97px;*/
+  /*background: url("../../src/assets/topbar.png") 0px -154px;*/
+
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 69.5px;
+  line-height: 76px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.ul-top li:hover {
+  /*background-size: auto;*/
+  background: url("../../src/assets/topbar.png") 0px -157px;
+}
+
+.hover-btn li {
+  border: 1px solid black;
+  text-align: center;
+}
+
+.header-1 .ul-top li {
+  float: left;
+  list-style: none;
+  color: rgb(204, 204, 204);
+  font-family: "Microsoft YaHei", "΢���ź�", "Microsoft JhengHei", "���ĺ���", arial, sans-serif, STHeiti, sans-serif;
+  font-size: 14px;
+  /*border-left: 1px solid black;*/
+  /*padding-left: 32px;*/
+  /*padding-top: 27px;*/
+}
+
+.ul-top li a {
+  color: rgb(189, 184, 196);
+}
+
+.header-1 .ul-top::after {
+  content: "";
+  display: block;
+  /*border: 1px solid #000;*/
+  width: 27px;
+  height: 18px;
+  float: left;
+  background: url("../../src/assets/topbar.png");
+  background-position: 290px 0px;
+  margin-top: 18px;
+  ;
+}
+
+.header-1 ul {
+  float: left;
+  padding-left: 10px;
+}
+
+#search {
+  width: 210px;
+  height: 31px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  /*padding-left: 5px;*/
+  margin-left: 105px;
+  margin-top: 20px;
+  font-size: 13px;
+  background: url("../../src/assets/topbar.png");
+  background-position: 0px 72px;
+  color: rgba(29, 29, 29, 0.7);
+  text-indent: 30px;
+  float: left;
+}
+
+
+/* 登录键的位置*/
+
+.sp-hover {
+  display: inline-block;
+  width: 50px;
+  height: 55px;
+  margin: 8px 8px 8px 18px;
+  line-height: 61px;
+  font-family: "Microsoft YaHei", "΢���ź�", "Microsoft JhengHei", "���ĺ���", arial, sans-serif, STHeiti, sans-serif;
+  /*border: 1px solid #000;*/
+  color: rgb(142, 137, 137);
+  /*height: 10px;*/
+}
+.sp-hover2{
+  display:block;
+  margin-left: 15px;
+  transform: translate(1091px,-38px);
+  /*position: absolute;*/
+  /*z-index: 21;*/
+  background: url("../img/topbar.png")  15px -378px;
+  width:15px;
+  height:10px;
+  /*background: red;*/
+}
+.sp-hover:hover~.sp-hover2{
+    background: url("../img/topbar.png")  15px -417px;
+}
+
+
+/*登录框hover上的小三角*/
+
+.hover-lock::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 10px;
+  /*border:1px solid black;*/
+  position: absolute;
+  top: -8px;
+  left: 72.5px;
+  background: url("../../src/assets/topbar.png") 290px -24px;
+}
+
+
+/*设置hover模块的位置和颜色及层级结构*/
+
+.hover-lock {
+  width: 165px;
+  height: 200px;
+  border: 1px solid #000;
+  border-radius: 3px;
+  background-color: rgb(42, 42, 42);
+  position: absolute;
+  right: 69px;
+  z-index: 21;
+  font-size: 13px;
+  color: rgb(204, 204, 204);
+  top: 60px;
+  display: none;
+}
+
+.hover-lock li {
+  list-style: none;
+  margin-left: -10px;
+  width: 175px;
+  height: 38px;
+  line-height: 38px;
+  /*border:1px solid black;*/
+}
+
+
+/* hover内部li的鼠标放置效果*/
+
+.hover-lock li:hover {
+  background: rgb(53, 53, 53)
+}
+
+
+/*在li前面加上logo小图标，*/
+
+.hover-lock li span {
+  line-height: 38px;
+  display: inline-block;
+  transform: translate(2px, 5px);
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 18px;
+  height: 18px;
+  background: url("../../src/assets/toplist.png") no-repeat 0px 0px;
+}
+
+
+/* 通过background-position调整小图标在li里显示的正确位置*/
+
+.hover-lock li:nth-child(1) span {
+  background-position: 0px 0px;
+}
+
+.hover-lock li:nth-child(2) span {
+  background-position: -20px -20px;
+}
+
+.hover-lock li:nth-child(3) span {
+  background-position: -20px -40px;
+}
+
+.hover-lock li:nth-child(4) span {
+  background-position: 0px -20px;
+}
+
+.hover-lock li:nth-child(5) span {
+  background-position: 0px -40px;
+}
+
+
+/*设置hover*/
+
+.sp-hover:hover~.hover-lock, .hover-lock:hover {
+  display: block;
+}
+
+
+/*红色部分第二条导航栏背景及位置*/
+
+.header-2 {
+  width: 100%;
+  height: 35px;
+  background: url("../../src/assets/topbar.png");
+  background-repeat: repeat;
+  /*margin: 0 auto;*/
+  /*border: 1px solid #000;*/
+  background-size: 240px 622px;
+  background-position: 0px -230px;
+  /*position: relative;*/
+}
+
+.ul-bottom {
+  width: 1150px;
+  /*border: 1px solid #000;*/
+  margin: 0 auto;
+}
+
+.ul-bottom ul {
+  margin-left: 200px;
+
+}
+
+.ul-bottom li {
+  list-style: none;
+  padding: 0 12px 0 12px;
+  margin: 8px 15px 3px 15px;
+  float: left;
+  margin-top: 8px;
+  line-height: 21px;
+  height: 20px;
+ /*border: 1px solid red;*/
+  border-radius: 20px;
+  /*background: url("../../src/assets/topbar.png");*/
+  /*background-position: 0px -270px;*/
+  /*background-size: 120px 640px;*/
+}
+.ul-bottom li:hover{
+  background-color: rgb(142, 3, 3);
+  box-shadow: 1px -1px 0 rgba(72, 76, 77, 0.32);
+}
+.ul-bottom li a{
+    color: white;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+
+
+
+
+/* article 部分*/
+
+.index-banner {
+  width: 100%;
+  height: 336px;
+  /*background: rgb(36, 107, 93);*/
+}
+#main{
+  width:100%;
+  height:1630px;
+  background:rgb(245, 245, 245);
+}
+.main-article{
+  width:980px;
+  height:1630px;
+  background:white;
+  border: 1px solid rgba(172, 170, 170,.5);
+  margin:0 auto;
+  /*border: 1px solid rgba(#000000, 0.5);*/
+}
+/*页面主体部分*/
+
+
+.article-left{
+width: 726px;
+height: 1630px;
+float: left;
+border-right: 1px solid rgba(172, 170, 170,.5);
+
+}
+.article-right{
+  float: right;
+  /*margin-left: -5px;*/
+  width: 250px;
+  height: 1630px;
+}
+/*主页面左侧部分*/
+/*轮播图模块*/
+
+.hot-music,
+.ad-music,
+.new-music,
+.list-music
+{
+  width: 689px;
+  margin: 1px auto;
+  /*border: 1px solid rgba(125, 130, 125 ,.7);*/
+  padding: 20px 20px 40px 20px;
+}
+
+.hot-music{
+      height: 523px;
+}
+.ad-music{
+  height: 78px;
+}
+.new-music{
+  height: 243px;
+}
+.list-music{
+  height: 527px;
+}
+/*热门音乐推荐头部*/
+.music-head{
+  border-bottom: 2.5px solid rgb(193,13,12);
+  width: 689px;
+  height: 35px;
+  position: absolute;
+}
+/*添加伪元素在列表之前*/
+.music-head ul li:nth-child(1)::before{
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../img/index.png') -232px -162px;
+  margin-right: 5px;
+  /*transform: translateY(5px);*/
+  width: 20px;
+  height: 20px;
+  /*border: 1px solid #000;*/
+
+}
+
+.bd-bar::after{
+  content: "|";
+  display: inline-block;
+  padding-left: 10px;
+  color: rgba(119, 118, 108,.5);
+  /*border: 1px solid #000;*/
+}
+.music-head ul li {
+  width: 44px;
+  /*border: 1px solid #000;*/
+  float: left;
+  margin-left: 3px;
+  line-height: 35px;
+}
+.music-head ul li a{
+  color: #666;
+  font-size: 12px;
+}
+.music-head ul li:nth-child(1) a{
+  color: black;
+  font-size: 20px;
+}
+
+.music-head ul li:nth-child(1){
+  width: 120px;
+  margin: 0 0px 0 10px;
+  font-size: 20px;
+}
+.music-head ul li:last-child{
+  position: absolute;
+  right: 0px;
+  margin-right: 10px;
+}
+.music-head ul li:last-child::after{
+  content: "";
+  display: inline-block;
+  transform: translate(7px,8px);
+  width: 20px;
+  height: 20px;
+  /*border: 1px solid #000;*/
+  background: url('../img/index.png')0px -238px;
+}
+
+.hot-music-article{
+  height: 480px;
+  width: 689px;
+  /*border: 1px solid #000;*/
+  margin-top: 80px;
+}
+.newmusic-article{
+    width: 687px;
+    height: 186px;
+    border: 1px solid rgba(65, 67, 70, 0.3);
+    background: rgb(245,245,245);
+    margin-top: 55px;
+}
+
+
+/*网页主体部分 专辑封面展示*/
+.cvrst li{
+  width: 140px;
+  height: 234px;
+  margin: 0 15px 0 15px;
+  float: left;
+  position: relative;
+  /*border: 1px solid #000;*/
+}
+
+.cover-buttom{
+  width: 140px;
+  position: absolute;
+  top:115px;
+  height: 27px;
+  /*border: 1px solid #000;*/
+  background: url('../img/coverall.png') 0px -537px;
+  color: #ccc;
+}
+.cover-buttom span:nth-child(1){
+  margin-right: 3px;
+  transform: translate(5px,2px);
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('../img/iconall.png') 0px -19px;
+}
+
+.cover-buttom span:nth-child(3){
+  /*margin-right: 3px;*/
+  transform: translate(50px,4px);
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url('../img/iconall.png') 0px 0px;
+}
+.cover-text{
+  display: block;
+  margin-top: 8px;
+  line-height: 22px;
+  font-size: 14px;
+}
+
+
+/* 网页主体部分*/
+
+
+
+/*网页右侧小框*/
+
+.n-log{
+  width: 252px;
+  height: 126px;
+  background: url('../img/index.png');
+  /*text-align: center;*/
+  /*background: rgb(245,245,245);*/
+  /*border: 1px solid #000;*/
+}
+.n-log span{
+  display: block;
+  margin: 20px auto;
+  line-height: 25px;
+  color:#666;
+  width: 205px;
+  height: 76px;
+}
+.n-log button{
+  display: block;
+  width: 102px;
+  height: 31px;
+  line-height: 31px;
+  font-size: 12px;
+  color: white;
+  margin: -30px auto;
+  background: url('../img/index.png') 0px -195px;
+}
+.n-log button:hover{
+    background: url('../img/index.png') -110px -195px;
+}
+
+.n-singer{
+  width: 212px;
+  height: 455px;
+  /*border: 1px solid #000;*/
+  padding: 20px 20px 20px 20px;
+}
+.n-dj{
+  width: 212px;
+  height: 295px;
+    padding: 20px 20px 20px 20px;
+  /*border: 1px solid #000;*/
+}
+.n-singer span:nth-child(1),
+.n-dj span:nth-child(1){
+
+  /*display: inline-block;*/
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: bold;
+
+}
+.n-singer span:nth-child(2){
+  margin-right: 20px;
+  float: right;
+}
+.n-singer ul li {
+  width: 211px;
+  height: 63px;
+  border: 1px solid rgba(124, 121, 123, 0.2);
+  margin-top: 10px;
+  background: rgba(245,245,245,.5);
+}
+.singer-info{
+
+  width: 211px;
+  height: 63px;
+}
+.singer-info img{
+  float: left;
+}
+.singer-info p{
+  color: rgb(88, 85, 85)
+}
+.singer-info h4,
+.singer-info p{
+  line-height: 30px;
+  transform: translateX(15px);
+  /*float:left;*/
+}
+.btn-sen{
+  width: 210px;
+  height: 31px;
+  /*border: 1px solid #000;*/
+  /*background: rgb(243,243,243);*/
+  margin-top: 10px;
+  border-radius: 5px;
+  background: url('../img/button2.png')0px -58px;
+}
+.btn-sen:hover{
+    background: url('../img/button2.png')0px -140px;
+}
+
+
+.jd-info{
+  width: 210px;
+  height: 40px;
+  margin-top: 10px;
+
+}
+.jd-info img{
+  float: left;
+}
+.jd-info span{
+  display: block;
+  transform: translateX(15px);
+  margin-top: 5px;
+}
+.jd-info span:nth-child(2){
+font-size: 12px;
+}
+.jd-info span:nth-child(3){
+font-size: 11px;
+color: rgb(156, 147, 143)
+}
+/*在音乐人后面增加伪类元素*/
+.jd-info span:nth-child(2)::after{
+  content: '';
+  display: inline-block;
+  transform: translate(5px ,4px);
+  width: 13px;
+  height: 13px;
+  /*border: 1px solid #000;*/
+  background: url('../img/icon.png')
+}
+
+
+/*热门榜单*/
+.listmusic-article{
+  height: 505px;
+  width: 693px;
+  border: 1px solid rgb(152, 149, 149);
+  margin-top: 50px;
+}
+
+
+/*登录框*/
+#logbox{
+  width: 530px;
+  height: 325px;
+  /*border: 1px solid #000;*/
+
+  /*background: black;*/
+  z-index: 1000;
+  position: absolute;
+  border-radius: 5px;
+  top: 100px;
+  left: 350px;
+  border: 1px solid #000;
+}
+#logbox em{
+  display: block;
+  position: absolute;
+  color: rgb(90, 91, 92);
+  cursor: pointer;
+  font-size: 14px;
+  right: 10px;
+    top: 10px;
+  width: 20px;
+  height: 20px;
+  /*background: red;*/
+  z-index: 100;
+}
